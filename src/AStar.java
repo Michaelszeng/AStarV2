@@ -53,10 +53,8 @@ public class AStar {
         }
         
       //Setting offsets based on initial and final node coordinates
-        xOffset = Math.max(Math.max(bufferLength-initialNode.getRow(), bufferLength-finalNode.getRow()), 0);	//First choose the larger offset between initial and final nodes, then, if the offset is negative, ignore it
-        yOffset = Math.max(Math.max(bufferLength-initialNode.getCol(), bufferLength-finalNode.getCol()), 0);	//First choose the larger offset between initial and final nodes, then, if the offset is negative, ignore it
-        setXOffset(xOffset);
-        setYOffset(yOffset);
+        setXOffset(Math.max(Math.max(bufferLength-initialNode.getRow(), bufferLength-finalNode.getRow()), 0));	//First choose the larger offset between initial and final nodes, then, if the offset is negative, ignore it. Then feed this offset amount to setOffset()
+        setYOffset(Math.max(Math.max(bufferLength-initialNode.getCol(), bufferLength-finalNode.getCol()), 0));	//First choose the larger offset between initial and final nodes, then, if the offset is negative, ignore it. Then feed this offset amount to setOffset()
         System.out.println("xOffset: " + xOffset);
         System.out.println("yOffset: " + yOffset);
         

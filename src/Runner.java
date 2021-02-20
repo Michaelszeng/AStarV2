@@ -7,7 +7,7 @@ public class Runner {
 
     public static void main(String[] args) {
         Node initialNode = new Node(0, 0);
-        Node finalNode = new Node(5, 2);
+        Node finalNode = new Node(2, 4);
         int rows = 6;
         int cols = 7;
 //        AStar aStar = new AStar(rows, cols, initialNode, finalNode);
@@ -16,24 +16,24 @@ public class Runner {
 //        aStar.setYOffset(5);
 //        int[][] obstaclesArray = new int[][]{{1, 3}, {2, 3}, {3, 3}};
         ArrayList<ArrayList<Integer>> obstacles = new ArrayList<>();
-        obstacles.add(new ArrayList(Arrays.asList(3, 0)));
+//        obstacles.add(new ArrayList(Arrays.asList(3, 0)));
 //        obstacles.add(new ArrayList(Arrays.asList(3, 1)));
 //        obstacles.add(new ArrayList(Arrays.asList(3, 2)));
 //        obstacles.add(new ArrayList(Arrays.asList(3, 3)));
 //        obstacles.add(new ArrayList(Arrays.asList(3, 4)));
 //        obstacles.add(new ArrayList(Arrays.asList(3, 5)));
         
-//        obstacles.add(new ArrayList(Arrays.asList(1, -1)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 0)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 1)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 2)));
-//        obstacles.add(new ArrayList(Arrays.asList(3, 3)));
-//        obstacles.add(new ArrayList(Arrays.asList(2, 3)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 3)));
-//        obstacles.add(new ArrayList(Arrays.asList(0, 3)));
-//        obstacles.add(new ArrayList(Arrays.asList(-1, 3)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 5)));
-//        obstacles.add(new ArrayList(Arrays.asList(1, 4)));
+        obstacles.add(new ArrayList(Arrays.asList(1, -1)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 0)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 1)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 2)));
+        obstacles.add(new ArrayList(Arrays.asList(3, 3)));
+        obstacles.add(new ArrayList(Arrays.asList(2, 3)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 3)));
+        obstacles.add(new ArrayList(Arrays.asList(0, 3)));
+        obstacles.add(new ArrayList(Arrays.asList(-1, 3)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 5)));
+        obstacles.add(new ArrayList(Arrays.asList(1, 4)));
         
 //        aStar.setObstacles(obstaclesArray);
         aStar.setObstacles(obstacles);
